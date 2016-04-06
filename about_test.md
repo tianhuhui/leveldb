@@ -3,7 +3,7 @@
 
 2.1 编译源码
 在leveldb目录，执行make命令。执行成功后，会在leveldb目录生成两个目录：out-shared和out-static。libleveldb.a文件在out-static目录中。
-![Alt text](./QQ截图20160406231716.png)
+![make](https://github.com/tianhuhui/leveldb/blob/branch_test_/images_about/make.png)
 
 2.2 编写测试文件tes.cpp
 ```C++
@@ -58,8 +58,8 @@ int main(){
 注意libleveldb.a 和leveldb include的路径。
 > g++ -o test test.cpp out-static/libleveldb.a -lpthread -I include/
 
-![Alt text](./QQ截图20160406233102.png)
+![g++](https://github.com/tianhuhui/leveldb/blob/branch_test_/images_about/g%2B%2B.png)
 
 2.4 运行：./test
-![Alt text](./QQ截图20160406233315.png)
+![test](https://github.com/tianhuhui/leveldb/blob/branch_test_/images_about/test.png)
 
