@@ -1,11 +1,12 @@
-1. ²âÊÔ»·¾³£ºWin10 + WMware Workstation 11 + CentOS 7.
-2. ²âÊÔ²½Öè
+1. æµ‹è¯•ç¯å¢ƒï¼šWin10 + WMware Workstation 11 + CentOS 7.
+2. æµ‹è¯•æ­¥éª¤
 
-2.1 ±àÒëÔ´Âë
-ÔÚleveldbÄ¿Â¼£¬Ö´ĞĞmakeÃüÁî¡£Ö´ĞĞ³É¹¦ºó£¬»áÔÚleveldbÄ¿Â¼Éú³ÉÁ½¸öÄ¿Â¼£ºout-sharedºÍout-static¡£libleveldb.aÎÄ¼şÔÚout-staticÄ¿Â¼ÖĞ¡£
+2.1 ç¼–è¯‘æºç 
+åœ¨leveldbç›®å½•ï¼Œæ‰§è¡Œmakeå‘½ä»¤ã€‚æ‰§è¡ŒæˆåŠŸåï¼Œä¼šåœ¨leveldbç›®å½•ç”Ÿæˆä¸¤ä¸ªç›®å½•ï¼šout-sharedå’Œout-staticã€‚libleveldb.aæ–‡ä»¶åœ¨out-staticç›®å½•ä¸­ã€‚
+
 ![make](https://github.com/tianhuhui/leveldb/blob/branch_test_/images_about/make.png)
 
-2.2 ±àĞ´²âÊÔÎÄ¼ştes.cpp
+2.2 ç¼–å†™æµ‹è¯•æ–‡ä»¶tes.cpp
 ```C++
 #include <assert.h>
 #include <string.h>
@@ -54,12 +55,14 @@ int main(){
 }
 ```
 
-2.3 ±àÒëÁ´½Ó
-×¢Òâlibleveldb.a ºÍleveldb includeµÄÂ·¾¶¡£
+2.3 ç¼–è¯‘é“¾æ¥
+æ³¨æ„libleveldb.a å’Œleveldb includeçš„è·¯å¾„ã€‚
 > g++ -o test test.cpp out-static/libleveldb.a -lpthread -I include/
+
 
 ![g++](https://github.com/tianhuhui/leveldb/blob/branch_test_/images_about/g%2B%2B.png)
 
-2.4 ÔËĞĞ£º./test
+2.4 è¿è¡Œï¼š./test
+
 ![test](https://github.com/tianhuhui/leveldb/blob/branch_test_/images_about/test.png)
 
